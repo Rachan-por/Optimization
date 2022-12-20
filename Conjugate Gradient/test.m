@@ -1,0 +1,16 @@
+x0 = [3;-3];
+mu = 0.1;
+eta = 0.2;
+option = 1;
+itmax = 100;
+epsilon = 10^(-5);
+[xmin, fmin, Xk, Fk, Gk, Lk, nF, nG, IFLAG, nReset] = CG(x0, epsilon, mu, eta, itmax, option);
+IterationK = (0:1:length(Fk)-3)';
+Xk1 = Xk(1,1:end-2)';
+Xk2 = Xk(2,1:end-2)';
+Fk =  Fk(1:end-2)';
+nF = nF(1:end-2)';
+nG = nG(1:end-2)';
+Lk = Lk(1:end-1)';
+nReset = nReset';
+T = table(IterationK, Xk1, Xk2, Fk,Lk, nF, nG, nReset)
