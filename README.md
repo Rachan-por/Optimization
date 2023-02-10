@@ -1,2 +1,2 @@
 # Introduction-to-Optimization
-This code was a part of a course 2102505 Introduction to Optimization Technique at Chulalongkorn university
+This code is part of the optimization course(2102505, 2102508) in department of electrical engineering at Chulalongkorn university.
